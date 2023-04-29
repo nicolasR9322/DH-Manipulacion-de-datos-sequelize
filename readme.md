@@ -10,3 +10,13 @@ descripcion: El objetivo será crear un crud con sequelize para crear, editar o 
                 -recibe los datos del formulario anterior y los guarda en la base de datos
                 -usar el metodo create
                 -validada con express validator
+    desafio 2:
+        -crear las siguientes rutas
+            -/movies/edit/:id(GET)
+                -muestra un formulario completo con los datos de la pelicula segun id
+                -crear un boton que envie a la edicion de la pelicula, en la vista de detalle
+            -/movies/update/:id(POST)--o PUT
+                -recibe informacion del formulario
+                -usar el metodo update para poder actualizar los datos mediante el formulario
+                -validacion con express-validator
+                -el pedido debe ser por PUT

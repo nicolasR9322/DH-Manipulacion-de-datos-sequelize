@@ -20,3 +20,10 @@ descripcion: El objetivo será crear un crud con sequelize para crear, editar o 
                 -usar el metodo update para poder actualizar los datos mediante el formulario
                 -validacion con express-validator
                 -el pedido debe ser por PUT
+    desafio 3:
+        -crear las siguientes rutas:
+            -/movies/delete/:id (GET)
+                -muestra una vista previa a la eliminacion
+            -/movies/delete/:id (post) => DELETE
+                -agregar un boton que permite eliminar la pelicula y eliminara la pelicula usando el metodo destroy de sequelize
+                -redirigir al listado de peliculas

@@ -118,10 +118,23 @@ const moviesController = {
         }
     },
     delete: function (req, res) {
-        // TODO
+        let id = req.params.id;
+
+        db.Movie.findByPk(id)
+            .then((Movie) => {
+                res.render("moviesDelete",{
+                    Movie
+                })
+            })
     },
     destroy: function (req, res) {
-        // TODO
+        let id = req.params.id;
+        db.Movie.destroy({
+            where : {
+                id: id
+            }
+        })
+        res.redirect("/movies")
     }
 
 }
